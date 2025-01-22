@@ -14,4 +14,14 @@ let inp2 = document.querySelector<HTMLInputElement>(".num2")
 
 
 
+if (inp1 && inp2 && total) {
+    const num1: number = parseFloat(inp1.value)
+    const num2: number = parseFloat(inp2.value)
+
+    let result: number = 0
+
+    switch(
+        
+    )
+}
 
