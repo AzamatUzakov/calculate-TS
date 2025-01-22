@@ -8,6 +8,7 @@
 main {
     position: relative;
     width: 1200px;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,34 +18,92 @@ main {
 
 .bodyMain {
     width: 50%;
-    height: 50%;
+    height: 55%;
     background-color: azure;
     border-radius: 25px;
     border: 3px solid black;
     padding: 30px;
 }
 
-.nums{
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nums {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-input{
-    width: 50px;
+input {
+    width: 100px;
     height: 50px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+border: 2px solid black;
+}
 
+#operator_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
 }
-#operator_btns{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 30px;
-gap: 10px;
-}
-#operator_btns button{
+
+#operator_btns button {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background-color: cadetblue;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 4px;
+    transition: .4s ease-in-out;
 }
+
+#operator_btns button:hover {
+    background-color: #F5F5F5;
+    transition: .4s ease-in-out;
+}
+
+.result {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: burlywood;
+    font-size: 23px;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 0 0 4px;
+    transition: .4s ease-in-out;   
+}
+.result:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Для Firefox */
+    -webkit-appearance: none; /* Для Chrome, Safari, Edge */
+    appearance: none; /* Для современных браузеров */
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Убирает кнопки в Chrome, Safari */
+    margin: 0; /* Убирает возможные отступы */
+  }
+  
